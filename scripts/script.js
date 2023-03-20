@@ -1,10 +1,10 @@
 // function declaration
-// function greet(name)
-// {
-//     console.log(`Hello ${name}`);
-// }
+function greet(name, time="day")
+{
+    console.log(`Good ${time} ${name}`);
+}
 // function calling
-// greet("Neda");
+greet("Neda");
 
 // // function expression
 // const greet = function (name)
@@ -14,9 +14,9 @@
 // // function calling
 // greet("Neda");
 // function expression
-const greet =  (name) =>
-{
-    console.log(`Hello ${name}`);
-}
-// function calling
-greet("Neda");
+// const greet =  (name) =>
+// {
+//     console.log(`Hello ${name}`);
+// }
+// // function calling
+// greet();
