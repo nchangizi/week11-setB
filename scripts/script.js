@@ -69,3 +69,15 @@ function populateList(myShoppingList) {
 
 let shoppingList = ["bread", "cheese", "green pepper"];
 populateList(shoppingList);
+
+function squareList() {
+  // get access to the
+  const ulElement = document.querySelector("ul.shopping");
+
+  // remove circleList class
+  ulElement.classList.remove("circleList");
+  // add squareList class
+  ulElement.classList.add("squareList")
+}
+
+squareList();
