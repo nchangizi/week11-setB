@@ -77,7 +77,35 @@ function squareList() {
   // remove circleList class
   ulElement.classList.remove("circleList");
   // add squareList class
-  ulElement.classList.add("squareList")
+  ulElement.classList.add("squareList");
 }
 
 squareList();
+
+function updateImage() {
+  const image = document.querySelector("#shoppingCart");
+  image.setAttribute(
+    "src",
+    "https://cdn-icons-png.flaticon.com/512/263/263142.png"
+  );
+  image.setAttribute("alt", "shopping Cart");
+  image.setAttribute("width", 50);
+  image.setAttribute("height", 50);
+}
+updateImage();
+
+function changeListGreen() {
+  // 1. find all li elements
+  const listItems = document.querySelectorAll(".shopping li");
+  console.log(listItems);
+  // 2. Loop through all lis
+  for (let item of listItems) {
+    // 3. get textContent of each li and check if  .includes("green") is true
+    if (item.textContent.includes("green")) {
+      // 4. update that specific li to green (class, .style.color)
+      // item.style.color = "green";
+      item.classList.add("greenItem");
+    }
+  }
+}
+changeListGreen();
