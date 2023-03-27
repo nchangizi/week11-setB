@@ -93,3 +93,19 @@ function updateImage() {
   image.setAttribute("height", 50);
 }
 updateImage();
+
+function changeListGreen() {
+  // 1. find all li elements
+  const listItems = document.querySelectorAll(".shopping li");
+  console.log(listItems);
+  // 2. Loop through all lis
+  for (let item of listItems) {
+    // 3. get textContent of each li and check if  .includes("green") is true
+    if (item.textContent.includes("green")) {
+      // 4. update that specific li to green (class, .style.color)
+      // item.style.color = "green";
+      item.classList.add("greenItem");
+    }
+  }
+}
+changeListGreen();
